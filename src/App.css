@@ -58,6 +58,71 @@ button:hover {
   border-radius: 15px;
   border: 1px solid hsl(200, 100%, 50%);
 }
+.cartContainer{
+  width: 40vw;
+  background-color: #f4f4f4;
+  margin:10vh auto;
+  display: flex;
+}
+.cartContainer img{
+  width: 200px;
+}
+.cartContainer input{
+  width: 15px;
+}
+.quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quntitygap{
+  margin: 3px;
+}
+.fa-star{
+  color: #ff008c;
+}
+.pricing{
+  display: flex;
+  justify-content: space-evenly;
+}
+.cartBox1{
+  margin: 20px;
+}
+.cartBox2{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cartbutton1{
+  background-color: greenyellow;
+  transition: all 0.7s ease;
+}
+.cartbutton2{
+  background-color:deepskyblue;
+  transition: all 0.7s ease;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.cartbutton1:hover, .cartbutton2:hover{
+  font-size: 18px;
+}
+.cartHead{
+  background: #f4f4f4;
+  width: 40vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartcontainerMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media screen and (max-width: 1096px) {
   body {

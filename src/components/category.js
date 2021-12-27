@@ -12,6 +12,7 @@ const Category = (props) => {
     const sortedData = sortByCategory(props.state, state);
     setstore(sortedData)
   },[props.state]);
+  console.log(store);
   return (
     <div>
       {state && state.map((element,index) => {
@@ -19,7 +20,7 @@ const Category = (props) => {
           <div className="container">
             <h1 className="elementHead">{element}</h1>
             <div className="box">
-              {store.length > 0 && store[index].map(elem => <Cards elem={elem}/>)}
+              {store.length > 0 && store[index].map((elem,indx) => <Cards key={indx} elem={elem}/>)}
             </div>
           </div>
         );

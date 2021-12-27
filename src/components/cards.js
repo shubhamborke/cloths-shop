@@ -1,6 +1,8 @@
-import CartPage from "./cartPage";
+import { Link } from "react-router-dom";
 const Cards = (props) => {
-  
+  const Click = () => {
+    return 
+  }
   return (
     <div className="box-model">
       <h2 className="head">{props.elem.title}</h2>
@@ -11,7 +13,9 @@ const Cards = (props) => {
         <p>Rating: {props.elem.rating.rate}</p>
       </div>
       <div className="button">
-        <button>Add To Card</button>
+        <Link to={`/CartPage`}>
+          <button onClick={Click}>Add To Card</button>
+        </Link>
       </div>
     </div>
   );

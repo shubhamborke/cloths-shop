@@ -11,7 +11,7 @@ const Category = (props) => {
     setstate(data);
     const sortedData = sortByCategory(props.state, state);
     setstore(sortedData)
-  });
+  },[store]);
   return (
     <div>
       {state && state.map((element,index) => {

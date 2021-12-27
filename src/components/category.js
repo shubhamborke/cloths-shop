@@ -19,7 +19,7 @@ const Category = (props) => {
           <div key={index} className="container">
             <h1 className="elementHead">{element}</h1>
             <div className="box">
-              {store.length > 0 && store[index].map((elem,indx) => <Cards key={indx} elem={elem}/>)}
+              {store.length > 0 && store[index].map((elem,indx) => <Cards dataTraverse={props.dataTraverse} key={indx} elem={elem}/>)}
             </div>
           </div>
         );

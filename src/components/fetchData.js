@@ -3,7 +3,7 @@ import apiCall from "../functions/apiCall";
 import dataSort from "../functions/dataSort";
 import Category from "./category";
 
-const FetchData = () => {
+const FetchData = (props) => {
   const [state, setstate] = useState([]);
 
   useEffect(async () => {
@@ -12,7 +12,7 @@ const FetchData = () => {
   }, []);
   return (
     <div>
-        {<Category store={dataSort(state)} state={state}/>}
+        {<Category store={dataSort(state)} dataTraverse={props.dataTraverse} state={state}/>}
     </div>
   );
 };

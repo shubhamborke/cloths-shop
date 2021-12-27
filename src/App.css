@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-.elementHead{
+.elementHead {
   display: block;
   background-color: #e0e0e0;
   padding: 2.5rem;
@@ -11,47 +11,90 @@
   top: 0;
   text-transform: capitalize;
 }
-.box{
+.box {
   display: flex;
   flex-wrap: wrap;
 }
-.box-model{
+.box-model {
   border: 1px solid black;
   width: 40vw;
   height: auto;
   margin: 15px auto;
   background-color: #fdfdfd;
 }
-.box-model img{
+.box-model img {
   width: 350px;
   height: 40vh;
   padding: 30px;
+  cursor: pointer;
 }
-.overflow{
+.overflow {
   height: 100px;
-  overflow-x:scroll;
+  overflow-x: scroll;
   margin: auto 3%;
   line-height: 25px;
 }
-.bottom{
+.bottom {
   display: flex;
   justify-content: space-evenly;
-  color: hsl(200,100%,50%);
+  color: hsl(200, 100%, 50%);
 }
-.head{
+.head {
   margin: 3% 15%;
   height: 30px;
+  padding-bottom: 5px;
 }
-button{
+button {
   padding: 10px;
   margin: 5px;
   transition: all 1s;
   background-color: orange;
   border-radius: 10px;
+  cursor: pointer;
 }
-button:hover{
-  background-color: hsl(200,100%,50%);
+button:hover {
+  background-color: hsl(200, 100%, 50%);
   color: black;
   border-radius: 15px;
-  border: 1px solid hsl(200,100%,50%);;
+  border: 1px solid hsl(200, 100%, 50%);
+}
+
+@media screen and (max-width: 1096px) {
+  body {
+    background: linear-gradient(to right, #5614b0, #dbd65c);
+  }
+  .elementHead {
+    padding: 1.5rem;
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  }
+  .box {
+    flex-direction: column;
+  }
+  .box-model {
+    margin: 15px auto;
+    width: 50vw;
+    background: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+  }
+  .box-model img {
+    width: 30vw;
+    height: 30vh;
+    padding: 30px;
+    cursor: pointer;
+  }
+  .head {
+    margin: 3% 15%;
+    font-size: 20px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 520px) {
+  .elementHead{
+    padding: 0.8rem;
+  }
+  .box-model {
+    width: 80vw;
+  }
+  .box-model img {
+    width: 50%;
+  }
 }

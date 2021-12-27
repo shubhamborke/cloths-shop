@@ -1,5 +1,5 @@
-const CartPage = () => {
-    
+const CartPage = (props) => {
+    console.log(props.state.id)
     return (
         <div>
             <h1>welcome to card page</h1>

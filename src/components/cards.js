@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Cards = (props) => {
   const Click = () => {
-    return 
+    return props.dataTraverse(props.elem)
   }
   return (
     <div className="box-model">

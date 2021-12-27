@@ -10,12 +10,9 @@ const FetchData = () => {
     const apiData = await apiCall();
     setstate(apiData.data);
   }, []);
-  
-//   console.log(store);
   return (
     <div>
         {<Category store={dataSort(state)} state={state}/>}
-      {/* {state && state.map(elements => <Cards key={elements.id} elements={elements}/>)} */}
     </div>
   );
 };

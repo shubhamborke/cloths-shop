@@ -68,7 +68,11 @@ button:hover {
   width: 200px;
 }
 .cartContainer input{
-  width: 15px;
+  border-radius: 5px;
+  border: white;
+  font-size: 18px;
+  width:20px;
+  margin: 3px;
 }
 .quantity{
   display: flex;
@@ -80,6 +84,7 @@ button:hover {
 }
 .fa-star{
   color: #ff008c;
+  margin-left: 3px;
 }
 .pricing{
   display: flex;
@@ -123,6 +128,57 @@ a{
   flex-direction: column;
   align-items: center;
 }
+.fa-minus-circle, .fa-plus-circle{
+  font-size: 25px;
+}
+.quntityAddButton{
+  margin: 0;
+  padding: 0;
+  border-radius: 25px;
+  background: #f4f4f4;
+  text-decoration: none;
+  border: none;
+  transition: all 1s ease-in-out;
+}
+.quntityAddButton:hover{
+  background: hsl(128, 83%, 55%);
+  outline: none;
+  width: 100%;
+  border: none;
+}
+.description{
+  word-spacing: 3px;
+}
+.color1{
+  color: hsl(100, 100%, 50%);
+}
+.color2{
+  color: hsl(200, 100%, 50%);
+}
+.color3{
+  color: hsl(300, 100%, 50%);
+}
+.color4{
+  color: hsl(400, 100%, 50%);
+}
+.color5{
+  color: hsl(500, 100%, 50%);
+}
+.color6{
+  color: hsl(600, 100%, 50%);
+}
+.color7{
+  color: hsl(700, 100%, 50%);
+}
+.color8{
+  color: hsl(800, 100%, 50%);
+}
+.color9{
+  color: hsl(900, 100%, 50%);
+}
+.color10{
+  color: hsl(1000, 100%, 50%);
+}
 
 @media screen and (max-width: 1096px) {
   body {
@@ -151,6 +207,12 @@ a{
     font-size: 20px;
     height: auto;
   }
+  .cartHead{
+    width: 80vw;
+  }
+  .cartContainer{
+    width: 80vw;
+  }
 }
 @media screen and (max-width: 520px) {
   .elementHead{
@@ -161,5 +223,8 @@ a{
   }
   .box-model img {
     width: 50%;
+  }
+  .cartContainer{
+    flex-direction: column;
   }
 }
